@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ROBOTO", sans-serif;
+}
+
+.nav,
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  position: relative;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.nav .textCrud,
+.slider .textCrud {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.3rem;
+  color: #03dac6;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+.textCrud:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff0266;
+}
+
+.slider h2 {
+  font-size: 2vw;
+  letter-spacing: 0.3rem;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
+h3.spanHome {
+  font-size: 2vw;
+  letter-spacing: 0.15rem;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
+h3 span:hover {
+  color: #03dac6!important;
+  font-weight: 500;
+  font-size: 2.2vw;
+}
+
+.botonera {
+  text-decoration: none !important;
+  background-color: #ffffff;
+  border: none;
+}
+
+.nav-container {
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-first {
+  position: fixed;
+  top: 75px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-second {
+  position: fixed;
+  top: 0;
+}
+.nav-container--top-second {
+  position: fixed;
+  top: 0;
+}
+
+.nav-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #03dac6;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 2vw;
+}
+
+.nav-tab:hover {
+  color: #ffffff;
+  background: #03dac6;
+  transition: all 0.5s ease;
+}
+
+.nav-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background: #03dac6;
+  transition: left 0.3s ease;
+}
+.background {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: auto;
+}
+.background {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.loader span {
+  color: #000000;
+  text-shadow: 0 0 0 #faebd7;
+}
+
+.containerHome{
+  border-radius: 10% 10% 0 0;
+  border: none;
+}
+
+
+@media (min-width: 360px) { 
+  .boton{
+    display: none;
+  }
+  .nav,
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 2em;
+  }
+  .nav .textCrud,
+  .slider .textCrud {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 8vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color:#ff0266;
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  .textCrud:hover {
+    transform: translate3d(0, -10px, 22px);
+    color:#03dac6;
+  }
+  h3.spanHome {
+    font-size: 3vw;
+    letter-spacing: 0.15rem;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #faebd7;
+    z-index: 4;
+  }
+  .nav-tab {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #ff0266;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 2.9vw;
+  }
+  
+  .nav-tab:hover {
+    color: #ffffff;
+    background: #ff0266;
+    transition: all 0.5s ease;
+  }
+  .btnComprar{
+    background-color: #ff0266!important;
+    border-radius: 0 16px 0 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .btnComprar:hover{
+    background-color: #03dac6 !important;
+    border-radius:16px 0 16px 0;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    color: #fff;
+  }
+  .botonProducts{
+    background-color: #ff0266!important;
+    border-radius: 0 16px 0 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .botonProducts:hover{
+    background-color: #03dac6 !important;
+    border-radius:16px 0 16px 0;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    color: #fff;
+  }
+  .nav .textProduct,
+  .slider .textProduct {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color:#ff0266;
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  .textCrud:hover {
+    transform: translate3d(0, -10px, 22px);
+    color:#03dac6;
+  }
+  .card-title-home{
+    font-size: 1.6em;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+  .card-text-home{
+    justify-content: center;
+    text-align: center;
+    font-size: 1em
+  }
+}
+
+@media (min-width: 576px) { 
+  .boton{
+    display: none;
+  }
+  .nav,
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 2em;
+  }
+  .nav .textCrud,
+  .slider .textCrud {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 8vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color:#ff0266;
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  .textCrud:hover {
+    transform: translate3d(0, -10px, 22px);
+    color:#03dac6;
+  }
+  h3.spanHome {
+    font-size: 3vw;
+    letter-spacing: 0.15rem;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #faebd7;
+    z-index: 4;
+  }
+  .nav-tab {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #ff0266;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 2.9vw;
+  }
+  .nav-tab:hover {
+    color: #ffffff;
+    background: #ff0266;
+    transition: all 0.5s ease;
+  }
+  .nav .textProduct,
+  .slider .textProduct {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color:#ff0266;
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  .textCrud:hover {
+    transform: translate3d(0, -10px, 22px);
+    color:#03dac6;
+  }
+}
+
+@media (min-width: 768px) { 
+  .boton{
+    display: none;
+  }
+  .nav,
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 2em;
+  }
+  .nav .textCrud,
+  .slider .textCrud {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 8vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color:#ff0266;
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  .textCrud:hover {
+    transform: translate3d(0, -10px, 22px);
+    color:#03dac6;
+  }
+  h3.spanHome {
+    font-size: 3vw;
+    letter-spacing: 0.15rem;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #faebd7;
+    z-index: 4;
+  }
+  .nav-tab {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #ff0266;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 2.9vw;
+  }
+  .nav-tab:hover {
+    color: #ffffff;
+    background: #ff0266;
+    transition: all 0.5s ease;
+  }
+  .card-title-home{
+    font-size: 1.4em;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+  .card-text-home{
+    justify-content: center;
+    text-align: center;
+    font-size: 1em
+  }
+  
+}
+
+
+
+
+
+@media (min-width: 992px) { 
+  .boton{
+    display:inline-block;
+  }
+  .nav,
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 2em;
+  }
+  .nav .textCrud,
+  .slider .textCrud {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 6vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color:#03dac6;
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  .textCrud:hover {
+    transform: translate3d(0, -10px, 22px);
+    color:#ff0266;
+  }
+  h3.spanHome {
+    font-size: 2vw;
+    letter-spacing: 0.15rem;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #faebd7;
+    z-index: 4;
+  }
+  .nav-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #03dac6;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 2vw;
+  }
+  
+  .nav-tab:hover {
+    color: #ffffff;
+    background: #03dac6;
+    transition: all 0.5s ease;
+  }
+  .btnComprar{
+    background-color: #03dac6 !important;
+    border-radius: 0 16px  0 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .btnComprar:hover{
+    background-color: #ff0266 !important;
+    border-radius:  16px  0 16px 0;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    color: #fff;
+  }
+  .botonProducts{
+    background-color: #ff0266!important;
+    border-radius: 0 16px 0 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .botonProducts:hover{
+    background-color: #03dac6 !important;
+    border-radius:16px 0 16px 0;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    color: #fff;
+  }
+  .nav .textProduct,
+  .slider .textProduct {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color:#03dac6;
+    transition: all 0.3s ease;
+    z-index: 3;
+  }
+  .textCrud:hover {
+    transform: translate3d(0, -10px, 22px);
+    color:#03dac6;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .boton{
+    display:inline-block;
+  }
+  .nav,
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 2em;
+  }
+  h3.spanHome {
+    font-size: 2vw;
+    letter-spacing: 0.15rem;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #faebd7;
+    z-index: 4;
+  }
+}
+
+@media (min-width: 1400px) {
+  .boton{
+    display:inline-block;
+  }
+  .nav,
+  .slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 2em;
+  }
+}
