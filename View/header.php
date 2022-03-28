@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
       
         <link rel="stylesheet" href="public/container.css" />
-        <link rel="stylesheet" href="public/normalize.css" />
+        <!--<link rel="stylesheet" href="public/normalize.css" />-->
         <title>Crud de citas</title>
 	</head>
 

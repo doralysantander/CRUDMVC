@@ -14,10 +14,10 @@
         <script src="/assets/datatable_intro/popper/popper.min.js"></script>
         <script src="/assets/datatable_intro/bootstrap/js/bootstrap.min.js"></script> -->
 
-        <script type="text/javascript" src="/assets/datatable_intro/dataTables/datatables.min.js"></script>
-        <script type="text/javascript" src="/assets/datatable_intro/main.js"></script>
+       <!-- <script type="text/javascript" src="/assets/datatable_intro/dataTables/datatables.min.js"></script>
+        <<script type="text/javascript" src="/assets/datatable_intro/main.js"></script>-->
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+       <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         
         <script>
             $(document).ready(function() {
