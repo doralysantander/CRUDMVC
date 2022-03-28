@@ -25,7 +25,7 @@
 
 - 1.Step -> Instalar PHP.
 - 2.Step -> Instalar Xampp.
-- 3.Step -> Clonar el repositorio de git URL del repositorio -> https://github.com/JDQN/CRUD-CITAS.git.
+- 3.Step -> Clonar el repositorio de git URL del repositorio -> https://github.com/doralysantander/CRUDMVC
 - 3.Step -> La carpeta llamada cita debe alojarse en el Htdocs.
 - 4.step -> Crear Base de datos en Mysql. 
 
