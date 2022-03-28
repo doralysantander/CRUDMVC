@@ -4,7 +4,7 @@
         <i class="fa-solid fa-file-circle-plus"></i>&nbsp; Agregar cita
     </a>
 
-    <a class="btn btn-dark btnGit" href="https://github.com/doralysantander/Crud-Consultorio"  target="_blank" > 
+    <a class="btn btn-dark btnGit" href="https://github.com/doralysantander/CRUDMVC.git"  target="_blank" > 
         <i class="fa-brands fa-github"></i>&nbsp; Ir a repositorio de Git
     </a>
 </div>
@@ -35,7 +35,7 @@
                             <a class="btn btn-outline-success" href="?c=Cita&a=Crud&id_cita=<?php echo $r->id_cita; ?>">
                                 <i class="fa-solid fa-pencil"></i>
                             </a>
-                            <a class="btn btn-outline-danger" href="?c=Cita&a=Eliminar&id_cita=<?php echo $r->id_cita; ?>">
+                            <a  onclick="return confirm('Estas seguro de eliminar?');" class="btn btn-outline-danger" href="?c=Cita&a=Eliminar&id_cita=<?php echo $r->id_cita; ?>">
                                 <i class="fa-solid fa-trash-can"></i>
                             </a>
                         </td>

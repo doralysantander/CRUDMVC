@@ -38,10 +38,11 @@
         <a class="btn btn-info btnRegresar" href="?c=Cita"> 
             <i class="fa-solid fa-circle-arrow-left"></i>&nbsp;&nbsp; Regresar
         </a>
-
-        <button class="btn btn-success btnGuardar">
+      
+        <button class="btn btn-success btnGuardar" >
             <i class="fa-regular fa-floppy-disk"></i>&nbsp;&nbsp; Guardar
         </button>
+       
     </div>
 </form>
 
