@@ -16,7 +16,8 @@
 
 <h3>🛠 Stack 🛠 </h3>
 
-- 🌐 &nbsp; HTML5 | CSS3 | Bootstrap |
+- 🌐 &nbsp; HTML5 | CSS3 | Bootstrap 
+-  🌐 &nbsp; Libreria| Datatable
 - 🛢 &nbsp; MySQL | 
 - 💻 &nbsp; Php |
 - 🖥 &nbsp; Deploying | -> <a href="http://crudcitas.infinityfreeapp.com/citas/index.php">Crud de citas</a>
